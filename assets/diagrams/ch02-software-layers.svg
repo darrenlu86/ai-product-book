@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
+  <rect width="720" height="620" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-down" markerWidth="10" markerHeight="7" refX="5" refY="0" orient="auto">
+      <polygon points="0 0, 10 0, 5 7" fill="#7C9885"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">軟體產品分層架構</text>
+
+  <!-- Layer 1: 使用者 -->
+  <rect x="200" y="65" width="320" height="55" rx="12" fill="#7C9885"/>
+  <text x="360" y="98" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">👤 使用者</text>
+  <text x="560" y="98" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="start">實際操作產品的人</text>
+
+  <line x1="360" y1="120" x2="360" y2="145" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+  <!-- Layer 2: 前端 -->
+  <rect x="200" y="150" width="320" height="55" rx="12" fill="#B8C5B2"/>
+  <text x="360" y="183" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">前端 Frontend</text>
+  <text x="560" y="183" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#2D2D2D" text-anchor="start">使用者看到的畫面和互動</text>
+
+  <line x1="360" y1="205" x2="360" y2="230" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+  <!-- Layer 3: API -->
+  <rect x="200" y="235" width="320" height="55" rx="12" fill="#E8E2DA"/>
+  <text x="360" y="268" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">API</text>
+  <text x="560" y="268" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#2D2D2D" text-anchor="start">前端和後端之間的溝通管道</text>
+
+  <line x1="360" y1="290" x2="360" y2="315" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+  <!-- Layer 4: 後端 -->
+  <rect x="200" y="320" width="320" height="55" rx="12" fill="#B8C5B2"/>
+  <text x="360" y="353" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">後端 Backend</text>
+  <text x="560" y="353" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#2D2D2D" text-anchor="start">處理邏輯、計算、商業規則</text>
+
+  <line x1="360" y1="375" x2="360" y2="400" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+  <!-- Layer 5: 資料庫 -->
+  <rect x="200" y="405" width="320" height="55" rx="12" fill="#B8C5B2"/>
+  <text x="360" y="438" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">資料庫 Database</text>
+  <text x="560" y="438" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#2D2D2D" text-anchor="start">儲存所有的資料</text>
+
+  <line x1="360" y1="460" x2="360" y2="485" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+  <!-- Layer 6: 部署平台 -->
+  <rect x="200" y="490" width="320" height="55" rx="12" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1.5"/>
+  <text x="360" y="523" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">部署平台 Deployment</text>
+  <text x="560" y="523" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#2D2D2D" text-anchor="start">讓產品能在網路上運作</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="590" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">資料從使用者出發，經過每一層處理，最終儲存在資料庫中</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400">
+  <rect width="720" height="400" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-d2" markerWidth="10" markerHeight="7" refX="5" refY="0" orient="auto">
+      <polygon points="0 0, 10 0, 5 7" fill="#7C9885"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">ExamBank 架構圖</text>
+
+  <!-- 使用者 -->
+  <rect x="260" y="65" width="200" height="50" rx="25" fill="#7C9885"/>
+  <text x="360" y="96" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">👤 使用者</text>
+
+  <line x1="360" y1="115" x2="360" y2="148" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d2)"/>
+
+  <!-- Cloudflare Pages -->
+  <rect x="180" y="155" width="360" height="60" rx="14" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="360" y="182" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">Cloudflare Pages</text>
+  <text x="360" y="202" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">前端 — 使用者看到的網頁介面</text>
+
+  <line x1="360" y1="215" x2="360" y2="248" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d2)"/>
+
+  <!-- Google Cloud Run -->
+  <rect x="180" y="255" width="360" height="60" rx="14" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="360" y="282" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">Google Cloud Run</text>
+  <text x="360" y="302" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">後端 — 處理搜尋、上傳等邏輯</text>
+
+  <line x1="360" y1="315" x2="360" y2="348" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d2)"/>
+
+  <!-- Supabase -->
+  <rect x="180" y="355" width="360" height="60" rx="14" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="360" y="382" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">Supabase</text>
+  <text x="360" y="402" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">資料庫 — 儲存考題、使用者資料</text>
+</svg>

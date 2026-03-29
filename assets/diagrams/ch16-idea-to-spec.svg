@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300">
+  <rect width="720" height="300" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-r16" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7C9885"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">想法到規格</text>
+
+  <!-- Box 1: 你的想法 -->
+  <rect x="40" y="75" width="170" height="80" rx="14" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="125" y="108" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">你的想法</text>
+  <text x="125" y="132" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">（輸入）</text>
+
+  <line x1="210" y1="115" x2="250" y2="115" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r16)"/>
+
+  <!-- Box 2: 核心問題 -->
+  <rect x="260" y="60" width="200" height="130" rx="14" fill="#7C9885"/>
+  <text x="360" y="90" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心問題</text>
+  <line x1="290" y1="100" x2="430" y2="100" stroke="#B8C5B2" stroke-width="1"/>
+  <text x="360" y="122" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#B8C5B2" text-anchor="middle">這東西幹嘛用的？</text>
+  <text x="360" y="142" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#B8C5B2" text-anchor="middle">誰會用？</text>
+  <text x="360" y="162" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#B8C5B2" text-anchor="middle">核心功能是什麼？</text>
+  <text x="360" y="182" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#B8C5B2" text-anchor="middle">有技術偏好嗎？</text>
+
+  <line x1="460" y1="115" x2="500" y2="115" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r16)"/>
+
+  <!-- Box 3: 結構化需求 -->
+  <rect x="510" y="75" width="170" height="80" rx="14" fill="#B8C5B2"/>
+  <text x="595" y="108" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">結構化需求</text>
+  <text x="595" y="132" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">（輸出）</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="250" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">模糊的想法經過四個核心問題，變成 AI 能理解的明確規格</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="340" viewBox="0 0 720 340">
+  <rect width="720" height="340" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-r9" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7C9885"/>
+    </marker>
+    <marker id="arrow-d9" markerWidth="10" markerHeight="7" refX="5" refY="0" orient="auto">
+      <polygon points="0 0, 10 0, 5 7" fill="#E8846B"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">部署流程</text>
+
+  <!-- Step 1: 寫好程式 -->
+  <rect x="30" y="80" width="140" height="70" rx="12" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="100" y="110" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#2D2D2D" text-anchor="middle">寫好程式</text>
+  <text x="100" y="130" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">本機開發</text>
+
+  <line x1="170" y1="115" x2="200" y2="115" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r9)"/>
+
+  <!-- Step 2: 推到 Git -->
+  <rect x="210" y="80" width="140" height="70" rx="12" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="280" y="110" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#2D2D2D" text-anchor="middle">推到 Git</text>
+  <text x="280" y="130" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">版本庫</text>
+
+  <line x1="350" y1="115" x2="380" y2="115" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r9)"/>
+
+  <!-- Step 3: 自動建置 -->
+  <rect x="390" y="80" width="140" height="70" rx="12" fill="#B8C5B2" stroke="#7C9885" stroke-width="2"/>
+  <text x="460" y="110" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#2D2D2D" text-anchor="middle">自動建置</text>
+  <text x="460" y="130" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">Build</text>
+
+  <line x1="530" y1="115" x2="560" y2="115" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r9)"/>
+
+  <!-- Step 4: 上線 -->
+  <rect x="570" y="80" width="130" height="70" rx="12" fill="#7C9885"/>
+  <text x="635" y="110" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">上線運作</text>
+  <text x="635" y="130" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#B8C5B2" text-anchor="middle">伺服器</text>
+
+  <!-- Failure branch -->
+  <line x1="460" y1="150" x2="460" y2="195" stroke="#E8846B" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow-d9)"/>
+
+  <rect x="370" y="200" width="180" height="55" rx="12" fill="#FFF0ED" stroke="#E8846B" stroke-width="1.5"/>
+  <text x="460" y="224" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#E8846B" text-anchor="middle">建置失敗？</text>
+  <text x="460" y="244" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#E8846B" text-anchor="middle">通知開發者修正</text>
+
+  <!-- Old version note -->
+  <rect x="370" y="270" width="180" height="40" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="460" y="295" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">舊版本繼續運作</text>
+
+  <!-- Success label -->
+  <text x="505" y="105" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="11" fill="#7C9885">成功</text>
+  <text x="445" y="178" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="11" fill="#E8846B">失敗</text>
+
+  <!-- Bottom note -->
+  <text x="200" y="310" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">推程式碼就自動部署，失敗也不怕 — 舊版還在</text>
+</svg>

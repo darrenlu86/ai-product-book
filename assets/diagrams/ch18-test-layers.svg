@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">三層測試金字塔</text>
+
+  <!-- Pyramid -->
+  <!-- Top layer: E2E -->
+  <polygon points="360,80 440,160 280,160" fill="#7C9885" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="360" y="140" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">E2E</text>
+
+  <!-- Middle layer: 整合測試 -->
+  <polygon points="280,162 440,162 510,260 210,260" fill="#B8C5B2" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="360" y="220" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">整合測試</text>
+
+  <!-- Bottom layer: 單元測試 -->
+  <polygon points="210,262 510,262 580,360 140,360" fill="#E8E2DA" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="360" y="320" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">單元測試</text>
+
+  <!-- Right side labels -->
+  <!-- E2E label -->
+  <line x1="442" y1="130" x2="490" y2="130" stroke="#7C9885" stroke-width="1.5"/>
+  <rect x="495" y="100" width="200" height="55" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="595" y="122" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" font-weight="bold" fill="#7C9885" text-anchor="middle">E2E 測試（最少）</text>
+  <text x="595" y="143" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#2D2D2D" text-anchor="middle">客人從進門到結帳的完整流程</text>
+
+  <!-- Integration label -->
+  <line x1="510" y1="215" x2="530" y2="215" stroke="#B8C5B2" stroke-width="1.5"/>
+  <rect x="535" y="188" width="170" height="55" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="620" y="210" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" font-weight="bold" fill="#7C9885" text-anchor="middle">整合測試（中等）</text>
+  <text x="620" y="231" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#2D2D2D" text-anchor="middle">廚房出菜到外場的配合</text>
+
+  <!-- Unit label -->
+  <line x1="520" y1="315" x2="530" y2="315" stroke="#E8E2DA" stroke-width="1.5"/>
+  <rect x="535" y="288" width="170" height="55" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="620" y="310" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" font-weight="bold" fill="#7C9885" text-anchor="middle">單元測試（最多）</text>
+  <text x="620" y="331" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#2D2D2D" text-anchor="middle">每道菜的每個步驟</text>
+
+  <!-- Left side: 數量 indicator -->
+  <text x="100" y="140" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">少</text>
+  <text x="100" y="320" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">多</text>
+  <line x1="100" y1="155" x2="100" y2="305" stroke="#7C9885" stroke-width="1.5"/>
+  <polygon points="95 155, 100 148, 105 155" fill="#7C9885"/>
+  <polygon points="95 305, 100 312, 105 305" fill="#7C9885"/>
+
+  <!-- Bottom note -->
+  <text x="360" y="400" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">底層測試最多最快，頂層測試最少但最接近真實使用情境</text>
+</svg>

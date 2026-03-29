@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <rect width="720" height="480" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-c20" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7C9885"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">迭代循環</text>
+
+  <!-- Pentagon layout: 5 nodes around a circle -->
+  <!-- Center: 360, 260. Radius ~150 -->
+  <!-- Angles: -90, -18, 54, 126, 198 degrees -->
+
+  <!-- Node 1: 定義 (top) -->
+  <rect x="295" y="75" width="130" height="55" rx="12" fill="#7C9885"/>
+  <text x="360" y="108" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">定義</text>
+
+  <!-- Node 2: 建造 (top-right) -->
+  <rect x="490" y="165" width="130" height="55" rx="12" fill="#B8C5B2"/>
+  <text x="555" y="198" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">建造</text>
+
+  <!-- Node 3: 測試 (bottom-right) -->
+  <rect x="460" y="320" width="130" height="55" rx="12" fill="#E8E2DA"/>
+  <text x="525" y="353" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">測試</text>
+
+  <!-- Node 4: 上線 (bottom-left) -->
+  <rect x="130" y="320" width="130" height="55" rx="12" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="195" y="353" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">上線</text>
+
+  <!-- Node 5: 收集回饋 (top-left) -->
+  <rect x="100" y="165" width="130" height="55" rx="12" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1.5"/>
+  <text x="165" y="198" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">收集回饋</text>
+
+  <!-- Arrows connecting nodes in a cycle -->
+  <!-- 定義 → 建造 -->
+  <line x1="425" y1="115" x2="490" y2="170" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-c20)"/>
+
+  <!-- 建造 → 測試 -->
+  <line x1="570" y1="220" x2="545" y2="320" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-c20)"/>
+
+  <!-- 測試 → 上線 -->
+  <line x1="460" y1="350" x2="260" y2="350" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-c20)"/>
+
+  <!-- 上線 → 收集回饋 -->
+  <line x1="155" y1="320" x2="155" y2="220" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-c20)"/>
+
+  <!-- 收集回饋 → 定義 -->
+  <line x1="215" y1="170" x2="295" y2="115" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-c20)"/>
+
+  <!-- Center cycle icon -->
+  <circle cx="360" cy="260" r="30" fill="none" stroke="#E8E2DA" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="360" y="265" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#7C9885" text-anchor="middle">循環</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="430" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">每一輪循環都讓產品更接近使用者真正需要的樣子</text>
+  <text x="360" y="455" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">回饋是最重要的燃料 — 沒有回饋就沒有進步</text>
+</svg>

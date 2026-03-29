@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380">
+  <rect width="720" height="380" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">API 四種動作</text>
+  <text x="360" y="62" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">用餐廳點餐來理解</text>
+
+  <!-- Header -->
+  <rect x="40" y="80" width="120" height="45" rx="10" fill="#7C9885"/>
+  <text x="100" y="108" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">HTTP 方法</text>
+  <rect x="170" y="80" width="160" height="45" rx="10" fill="#7C9885"/>
+  <text x="250" y="108" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">餐廳比喻</text>
+  <rect x="340" y="80" width="120" height="45" rx="10" fill="#7C9885"/>
+  <text x="400" y="108" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">軟體動作</text>
+  <rect x="470" y="80" width="210" height="45" rx="10" fill="#7C9885"/>
+  <text x="575" y="108" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">範例</text>
+
+  <!-- GET -->
+  <rect x="40" y="135" width="120" height="50" rx="10" fill="#B8C5B2"/>
+  <text x="100" y="166" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">GET</text>
+  <rect x="170" y="135" width="160" height="50" rx="10" fill="#F5F2EF"/>
+  <text x="250" y="166" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">看菜單</text>
+  <rect x="340" y="135" width="120" height="50" rx="10" fill="#F5F2EF"/>
+  <text x="400" y="166" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">讀取</text>
+  <rect x="470" y="135" width="210" height="50" rx="10" fill="#F5F2EF"/>
+  <text x="575" y="166" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">查看所有考題列表</text>
+
+  <!-- POST -->
+  <rect x="40" y="195" width="120" height="50" rx="10" fill="#B8C5B2"/>
+  <text x="100" y="226" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">POST</text>
+  <rect x="170" y="195" width="160" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="250" y="226" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">點菜</text>
+  <rect x="340" y="195" width="120" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="400" y="226" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">新增</text>
+  <rect x="470" y="195" width="210" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="575" y="226" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">上傳一份新考卷</text>
+
+  <!-- PUT -->
+  <rect x="40" y="255" width="120" height="50" rx="10" fill="#B8C5B2"/>
+  <text x="100" y="286" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">PUT</text>
+  <rect x="170" y="255" width="160" height="50" rx="10" fill="#F5F2EF"/>
+  <text x="250" y="286" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">改成七分熟</text>
+  <rect x="340" y="255" width="120" height="50" rx="10" fill="#F5F2EF"/>
+  <text x="400" y="286" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">修改</text>
+  <rect x="470" y="255" width="210" height="50" rx="10" fill="#F5F2EF"/>
+  <text x="575" y="286" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">修改考題的標籤分類</text>
+
+  <!-- DELETE -->
+  <rect x="40" y="315" width="120" height="50" rx="10" fill="#B8C5B2"/>
+  <text x="100" y="346" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">DELETE</text>
+  <rect x="170" y="315" width="160" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="250" y="346" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">取消這道菜</text>
+  <rect x="340" y="315" width="120" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="400" y="346" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">刪除</text>
+  <rect x="470" y="315" width="210" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="575" y="346" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">刪除一份重複考卷</text>
+</svg>

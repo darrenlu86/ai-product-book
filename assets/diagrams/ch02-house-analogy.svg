@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">蓋房子的比喻</text>
+
+  <!-- Table header -->
+  <rect x="60" y="65" width="290" height="48" rx="12" fill="#7C9885"/>
+  <text x="205" y="95" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">軟體概念</text>
+
+  <rect x="370" y="65" width="290" height="48" rx="12" fill="#7C9885"/>
+  <text x="515" y="95" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">蓋房子比喻</text>
+
+  <!-- Row 1: 前端 -->
+  <rect x="60" y="123" width="290" height="50" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="205" y="153" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">前端 Frontend</text>
+  <rect x="370" y="123" width="290" height="50" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="515" y="153" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">🏠 裝潢 — 客人看到的外觀</text>
+
+  <!-- Row 2: 後端 -->
+  <rect x="60" y="183" width="290" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="205" y="213" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">後端 Backend</text>
+  <rect x="370" y="183" width="290" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="515" y="213" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">🔧 水電管線 — 藏在牆壁裡</text>
+
+  <!-- Row 3: 資料庫 -->
+  <rect x="60" y="243" width="290" height="50" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="205" y="273" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">資料庫 Database</text>
+  <rect x="370" y="243" width="290" height="50" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="515" y="273" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">📦 倉庫 — 存放所有東西</text>
+
+  <!-- Row 4: API -->
+  <rect x="60" y="303" width="290" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="205" y="333" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">API</text>
+  <rect x="370" y="303" width="290" height="50" rx="10" fill="#FFFFFF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="515" y="333" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">🔌 管線接口 — 連接各個系統</text>
+
+  <!-- Row 5: 部署 -->
+  <rect x="60" y="363" width="290" height="50" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="205" y="393" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">部署 Deployment</text>
+  <rect x="370" y="363" width="290" height="50" rx="10" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="515" y="393" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" fill="#2D2D2D" text-anchor="middle">🏗️ 蓋在哪塊地 — 地段選擇</text>
+</svg>

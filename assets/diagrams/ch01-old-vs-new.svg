@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">新舊時代對照</text>
+
+  <!-- Left column: AI 以前 -->
+  <rect x="40" y="70" width="280" height="300" rx="16" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1.5"/>
+  <rect x="40" y="70" width="280" height="50" rx="16" fill="#7C9885"/>
+  <rect x="40" y="96" width="280" height="24" fill="#7C9885"/>
+  <text x="180" y="102" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AI 以前</text>
+
+  <text x="180" y="155" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">稀缺的是 HOW</text>
+  <text x="180" y="185" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">怎麼寫 API？</text>
+  <text x="180" y="210" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">怎麼設定資料庫？</text>
+  <text x="180" y="235" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">怎麼部署伺服器？</text>
+
+  <line x1="130" y1="260" x2="230" y2="260" stroke="#E8E2DA" stroke-width="1.5"/>
+
+  <text x="180" y="290" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">需要花好幾年</text>
+  <text x="180" y="312" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">學習技術才能做產品</text>
+
+  <!-- Arrow in the middle -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7C9885"/>
+    </marker>
+  </defs>
+  <line x1="335" y1="220" x2="385" y2="220" stroke="#7C9885" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="360" y="250" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">轉變</text>
+
+  <!-- Right column: AI 以後 -->
+  <rect x="400" y="70" width="280" height="300" rx="16" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1.5"/>
+  <rect x="400" y="70" width="280" height="50" rx="16" fill="#7C9885"/>
+  <rect x="400" y="96" width="280" height="24" fill="#7C9885"/>
+  <text x="540" y="102" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AI 以後</text>
+
+  <text x="540" y="155" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">稀缺的是 WHAT 和 WHY</text>
+  <text x="540" y="185" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">要解決什麼問題？</text>
+  <text x="540" y="210" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">為什麼需要這個功能？</text>
+  <text x="540" y="235" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">使用者真正的痛點是什麼？</text>
+
+  <line x1="490" y1="260" x2="590" y2="260" stroke="#E8E2DA" stroke-width="1.5"/>
+
+  <text x="540" y="290" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">需要理解問題的能力</text>
+  <text x="540" y="312" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">以及做出正確判斷的能力</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="405" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">技術執行力不再是門檻，問對問題才是真正的競爭力</text>
+</svg>

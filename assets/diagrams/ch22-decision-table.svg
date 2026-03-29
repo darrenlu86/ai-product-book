@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400">
+  <rect width="720" height="400" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">三類決策對照</text>
+  <text x="360" y="62" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">誰該做什麼決定？</text>
+
+  <!-- Column 1: AI 該決定的 -->
+  <rect x="30" y="80" width="210" height="50" rx="12" fill="#B8C5B2"/>
+  <text x="135" y="110" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">AI 該決定的（技術）</text>
+
+  <rect x="30" y="140" width="210" height="200" rx="12" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="135" y="175" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">用哪個框架</text>
+  <line x1="60" y1="190" x2="210" y2="190" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="135" y="218" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">資料庫結構設計</text>
+  <line x1="60" y1="233" x2="210" y2="233" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="135" y="261" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">演算法選擇</text>
+  <line x1="60" y1="276" x2="210" y2="276" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="135" y="304" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">程式碼結構</text>
+
+  <!-- Column 2: 一起討論的 -->
+  <rect x="255" y="80" width="210" height="50" rx="12" fill="#E8E2DA"/>
+  <text x="360" y="110" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">一起討論的（灰色地帶）</text>
+
+  <rect x="255" y="140" width="210" height="200" rx="12" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="360" y="175" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">技術可行性</text>
+  <line x1="285" y1="190" x2="435" y2="190" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="360" y="218" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">效能 vs 開發速度</text>
+  <line x1="285" y1="233" x2="435" y2="233" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="360" y="261" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">選用哪個第三方服務</text>
+  <line x1="285" y1="276" x2="435" y2="276" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="360" y="304" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">架構取捨</text>
+
+  <!-- Column 3: 你該決定的 -->
+  <rect x="480" y="80" width="210" height="50" rx="12" fill="#7C9885"/>
+  <text x="585" y="110" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">你該決定的（產品）</text>
+
+  <rect x="480" y="140" width="210" height="200" rx="12" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="585" y="175" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">要做什麼功能</text>
+  <line x1="510" y1="190" x2="660" y2="190" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="585" y="218" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">怎麼定價</text>
+  <line x1="510" y1="233" x2="660" y2="233" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="585" y="261" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">隱私政策</text>
+  <line x1="510" y1="276" x2="660" y2="276" stroke="#E8E2DA" stroke-width="1"/>
+  <text x="585" y="304" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#2D2D2D" text-anchor="middle">品牌定位</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="380" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">技術交給 AI，產品方向你來定，灰色地帶一起討論</text>
+</svg>

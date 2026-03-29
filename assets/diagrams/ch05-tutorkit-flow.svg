@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="580" viewBox="0 0 720 580">
+  <rect width="720" height="580" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-d5" markerWidth="10" markerHeight="7" refX="5" refY="0" orient="auto">
+      <polygon points="0 0, 10 0, 5 7" fill="#7C9885"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">TutorKit AI 解題流程</text>
+
+  <!-- Step 1: 使用者上傳 -->
+  <rect x="210" y="60" width="300" height="50" rx="12" fill="#7C9885"/>
+  <text x="360" y="90" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">📄 使用者上傳考卷</text>
+
+  <line x1="360" y1="110" x2="360" y2="135" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d5)"/>
+
+  <!-- Step 2: 前端顯示進度 -->
+  <rect x="210" y="142" width="300" height="50" rx="12" fill="#B8C5B2"/>
+  <text x="360" y="163" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">前端</text>
+  <text x="360" y="182" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">顯示上傳進度</text>
+
+  <line x1="360" y1="192" x2="360" y2="217" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d5)"/>
+
+  <!-- API label -->
+  <rect x="330" y="215" width="60" height="24" rx="6" fill="#E8E2DA"/>
+  <text x="360" y="232" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="11" fill="#2D2D2D" text-anchor="middle">API</text>
+
+  <line x1="360" y1="239" x2="360" y2="264" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d5)"/>
+
+  <!-- Step 3: Mistral OCR -->
+  <rect x="210" y="271" width="300" height="50" rx="12" fill="#B8C5B2"/>
+  <text x="360" y="292" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">後端</text>
+  <text x="360" y="311" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">Mistral OCR 辨識考卷文字</text>
+
+  <line x1="360" y1="321" x2="360" y2="346" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d5)"/>
+
+  <!-- Step 4: Gemini 生成解答 -->
+  <rect x="210" y="353" width="300" height="50" rx="12" fill="#B8C5B2"/>
+  <text x="360" y="374" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">後端</text>
+  <text x="360" y="393" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">Gemini AI 生成解答</text>
+
+  <line x1="360" y1="403" x2="360" y2="428" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d5)"/>
+
+  <!-- API label -->
+  <rect x="330" y="426" width="60" height="24" rx="6" fill="#E8E2DA"/>
+  <text x="360" y="443" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="11" fill="#2D2D2D" text-anchor="middle">API</text>
+
+  <line x1="360" y1="450" x2="360" y2="475" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d5)"/>
+
+  <!-- Step 5: 前端顯示結果 -->
+  <rect x="210" y="482" width="300" height="50" rx="12" fill="#7C9885"/>
+  <text x="360" y="503" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#B8C5B2" text-anchor="middle">前端</text>
+  <text x="360" y="522" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">顯示解題結果給使用者</text>
+
+  <!-- Note -->
+  <text x="360" y="565" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle" font-style="italic">整個流程自動完成，使用者只需上傳考卷就能得到 AI 解答</text>
+</svg>

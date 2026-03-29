@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440">
+  <rect width="720" height="440" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">四層對話法</text>
+  <text x="360" y="62" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle">與 AI 協作的結構化溝通框架</text>
+
+  <!-- Layer 1: 目標 -->
+  <rect x="120" y="85" width="480" height="70" rx="14" fill="#7C9885"/>
+  <text x="170" y="115" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">第一層</text>
+  <text x="170" y="140" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#B8C5B2">目標 — WHY + WHAT</text>
+  <text x="520" y="125" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">為什麼要做？要做什麼？</text>
+
+  <!-- Layer 2: 決策 -->
+  <rect x="120" y="165" width="480" height="70" rx="14" fill="#B8C5B2"/>
+  <text x="170" y="195" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="18" font-weight="bold" fill="#2D2D2D">第二層</text>
+  <text x="170" y="220" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#7C9885">決策 — WHICH</text>
+  <text x="520" y="205" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">選哪個方案？用什麼技術？</text>
+
+  <!-- Layer 3: 驗收 -->
+  <rect x="120" y="245" width="480" height="70" rx="14" fill="#E8E2DA"/>
+  <text x="170" y="275" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="18" font-weight="bold" fill="#2D2D2D">第三層</text>
+  <text x="170" y="300" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#7C9885">驗收 — CHECK</text>
+  <text x="520" y="285" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">做出來的對不對？符合預期嗎？</text>
+
+  <!-- Layer 4: 迭代 -->
+  <rect x="120" y="325" width="480" height="70" rx="14" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1.5"/>
+  <text x="170" y="355" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="18" font-weight="bold" fill="#2D2D2D">第四層</text>
+  <text x="170" y="380" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" fill="#7C9885">迭代 — NEXT</text>
+  <text x="520" y="365" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">下一步要改什麼？還缺什麼？</text>
+
+  <!-- Side arrow -->
+  <text x="80" y="125" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="24" fill="#7C9885" text-anchor="middle">①</text>
+  <text x="80" y="205" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="24" fill="#7C9885" text-anchor="middle">②</text>
+  <text x="80" y="285" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="24" fill="#7C9885" text-anchor="middle">③</text>
+  <text x="80" y="365" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="24" fill="#7C9885" text-anchor="middle">④</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="425" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">每一層都是一次完整的對話，從上到下逐步推進</text>
+</svg>

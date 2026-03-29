@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="660" viewBox="0 0 720 660">
+  <rect width="720" height="660" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-da" markerWidth="10" markerHeight="7" refX="5" refY="0" orient="auto">
+      <polygon points="0 0, 10 0, 5 7" fill="#7C9885"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">知識地圖六層架構</text>
+
+  <!-- Layer 1: 前端 -->
+  <rect x="140" y="65" width="440" height="70" rx="14" fill="#7C9885"/>
+  <text x="185" y="95" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">① 前端</text>
+  <text x="185" y="118" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#B8C5B2">React, Next.js, Vue, Astro</text>
+  <text x="490" y="105" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">使用者看到和操作的介面</text>
+
+  <line x1="360" y1="135" x2="360" y2="155" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-da)"/>
+
+  <!-- Layer 2: 後端 -->
+  <rect x="140" y="162" width="440" height="70" rx="14" fill="#B8C5B2"/>
+  <text x="185" y="192" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">② 後端</text>
+  <text x="185" y="215" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">FastAPI, Node.js, Express</text>
+  <text x="490" y="202" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">處理商業邏輯和資料運算</text>
+
+  <line x1="360" y1="232" x2="360" y2="252" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-da)"/>
+
+  <!-- Layer 3: 資料庫 -->
+  <rect x="140" y="259" width="440" height="70" rx="14" fill="#E8E2DA"/>
+  <text x="185" y="289" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">③ 資料庫</text>
+  <text x="185" y="312" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">Supabase, PostgreSQL, Firebase</text>
+  <text x="490" y="299" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">儲存和管理結構化資料</text>
+
+  <line x1="360" y1="329" x2="360" y2="349" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-da)"/>
+
+  <!-- Layer 4: 檔案儲存 -->
+  <rect x="140" y="356" width="440" height="70" rx="14" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="185" y="386" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">④ 檔案儲存</text>
+  <text x="185" y="409" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">Cloudflare R2, S3, GCS</text>
+  <text x="490" y="396" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">存放圖片、影片、PDF 等檔案</text>
+
+  <line x1="360" y1="426" x2="360" y2="446" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-da)"/>
+
+  <!-- Layer 5: AI 服務 -->
+  <rect x="140" y="453" width="440" height="70" rx="14" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1.5"/>
+  <text x="185" y="483" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">⑤ AI 服務</text>
+  <text x="185" y="506" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">Claude, Gemini, GPT, Mistral</text>
+  <text x="490" y="493" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">提供智慧分析和生成能力</text>
+
+  <line x1="360" y1="523" x2="360" y2="543" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-da)"/>
+
+  <!-- Layer 6: 部署 -->
+  <rect x="140" y="550" width="440" height="70" rx="14" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1.5"/>
+  <text x="185" y="580" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">⑥ 部署</text>
+  <text x="185" y="603" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">Cloudflare, Cloud Run, Vercel</text>
+  <text x="490" y="590" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">讓產品在網路上穩定運作</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="650" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">六層是完整的產品技術棧 — 你不需要每層都懂，但需要知道每層在做什麼</text>
+</svg>

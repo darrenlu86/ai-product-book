@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520">
+  <rect width="720" height="520" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-d14" markerWidth="10" markerHeight="7" refX="5" refY="0" orient="auto">
+      <polygon points="0 0, 10 0, 5 7" fill="#7C9885"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">五輪迭代法</text>
+
+  <!-- Round 1 -->
+  <rect x="160" y="65" width="400" height="60" rx="14" fill="#7C9885"/>
+  <text x="200" y="92" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">第一輪</text>
+  <text x="200" y="113" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#B8C5B2">MVP</text>
+  <text x="460" y="100" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle">能動就好</text>
+
+  <line x1="360" y1="125" x2="360" y2="148" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d14)"/>
+
+  <!-- Round 2 -->
+  <rect x="160" y="155" width="400" height="60" rx="14" fill="#B8C5B2"/>
+  <text x="200" y="182" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">第二輪</text>
+  <text x="200" y="203" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">UI/UX</text>
+  <text x="460" y="190" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" fill="#2D2D2D" text-anchor="middle">像樣一點</text>
+
+  <line x1="360" y1="215" x2="360" y2="238" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d14)"/>
+
+  <!-- Round 3 -->
+  <rect x="160" y="245" width="400" height="60" rx="14" fill="#E8E2DA"/>
+  <text x="200" y="272" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">第三輪</text>
+  <text x="200" y="293" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">完善</text>
+  <text x="460" y="280" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" fill="#2D2D2D" text-anchor="middle">補上遺漏</text>
+
+  <line x1="360" y1="305" x2="360" y2="328" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d14)"/>
+
+  <!-- Round 4 -->
+  <rect x="160" y="335" width="400" height="60" rx="14" fill="#F5F2EF" stroke="#B8C5B2" stroke-width="2"/>
+  <text x="200" y="362" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">第四輪</text>
+  <text x="200" y="383" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">部署</text>
+  <text x="460" y="370" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" fill="#2D2D2D" text-anchor="middle">上線</text>
+
+  <line x1="360" y1="395" x2="360" y2="418" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d14)"/>
+
+  <!-- Round 5 -->
+  <rect x="160" y="425" width="400" height="60" rx="14" fill="#F5F2EF" stroke="#E8E2DA" stroke-width="1.5"/>
+  <text x="200" y="452" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="20" font-weight="bold" fill="#2D2D2D">第五輪</text>
+  <text x="200" y="473" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885">回饋</text>
+  <text x="460" y="460" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" fill="#2D2D2D" text-anchor="middle">根據回饋迭代</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="510" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">不要追求一步到位，每一輪都是進步</text>
+</svg>

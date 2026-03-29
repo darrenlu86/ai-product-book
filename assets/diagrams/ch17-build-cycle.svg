@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400">
+  <rect width="720" height="400" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-r17" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7C9885"/>
+    </marker>
+    <marker id="arrow-l17" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#E8846B"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">建造循環</text>
+
+  <!-- Box 1: 描述 -->
+  <rect x="40" y="90" width="160" height="70" rx="14" fill="#7C9885"/>
+  <text x="120" y="122" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">描述需求</text>
+  <text x="120" y="145" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#B8C5B2" text-anchor="middle">告訴 AI 你要什麼</text>
+
+  <line x1="200" y1="125" x2="250" y2="125" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r17)"/>
+
+  <!-- Box 2: AI 建造 -->
+  <rect x="260" y="90" width="160" height="70" rx="14" fill="#B8C5B2"/>
+  <text x="340" y="122" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">AI 建造</text>
+  <text x="340" y="145" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">AI 寫程式碼</text>
+
+  <line x1="420" y1="125" x2="470" y2="125" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r17)"/>
+
+  <!-- Box 3: 你驗收 -->
+  <rect x="480" y="90" width="160" height="70" rx="14" fill="#E8E2DA"/>
+  <text x="560" y="122" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="16" font-weight="bold" fill="#2D2D2D" text-anchor="middle">你驗收</text>
+  <text x="560" y="145" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" fill="#7C9885" text-anchor="middle">測試、檢查結果</text>
+
+  <!-- OK branch -->
+  <line x1="560" y1="160" x2="560" y2="210" stroke="#7C9885" stroke-width="2"/>
+  <line x1="560" y1="210" x2="620" y2="210" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r17)"/>
+
+  <rect x="530" y="188" width="30" height="18" rx="4" fill="#FFFFFF"/>
+  <text x="545" y="202" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="11" fill="#7C9885" text-anchor="middle">OK</text>
+
+  <!-- Next feature -->
+  <rect x="630" y="185" width="70" height="50" rx="12" fill="#7C9885"/>
+  <text x="665" y="207" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">下一個</text>
+  <text x="665" y="224" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">功能</text>
+
+  <!-- Return arrow from next feature to 描述 -->
+  <path d="M 665 235 L 665 320 L 120 320 L 120 165" stroke="#7C9885" stroke-width="2" fill="none" stroke-dasharray="6,3"/>
+  <polygon points="115 170, 120 160, 125 170" fill="#7C9885"/>
+
+  <!-- Problem branch -->
+  <line x1="480" y1="145" x2="480" y2="145" stroke="#E8846B" stroke-width="2"/>
+  <path d="M 560 160 L 560 270" stroke="#E8846B" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <rect x="520" y="252" width="50" height="18" rx="4" fill="#FFFFFF"/>
+  <text x="545" y="266" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="11" fill="#E8846B" text-anchor="middle">有問題</text>
+
+  <!-- 修正 box -->
+  <rect x="480" y="275" width="160" height="50" rx="12" fill="#FFF0ED" stroke="#E8846B" stroke-width="1.5"/>
+  <text x="560" y="305" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="14" font-weight="bold" fill="#E8846B" text-anchor="middle">修正問題</text>
+
+  <!-- Return to 驗收 -->
+  <path d="M 640 300 L 680 300 L 680 125 L 645 125" stroke="#E8846B" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow-l17)"/>
+
+  <text x="690" y="220" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="10" fill="#E8846B" text-anchor="middle" transform="rotate(90, 690, 220)">回到驗收</text>
+
+  <!-- Bottom note -->
+  <text x="300" y="380" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" fill="#7C9885" text-anchor="middle" font-style="italic">描述 → 建造 → 驗收，不斷循環直到滿意</text>
+</svg>
