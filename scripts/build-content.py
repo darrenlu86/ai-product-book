@@ -54,7 +54,7 @@ def main():
     if os.path.exists(preface_path):
         with open(preface_path, 'r') as f:
             preface_content = f.read()
-        preface_body = re.sub(r'^# .+\n', '', preface_content).strip()
+        preface_body = re.sub(r'^# .+$', '', preface_content, count=1, flags=re.MULTILINE).strip()
         all_chapters.append({
             'id': 'preface',
             'title': '前言',
