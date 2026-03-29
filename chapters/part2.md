@@ -10,7 +10,7 @@
 
 ## 四層對話法
 
-![圖：四層對話法架構](assets/diagrams/ch11-four-layer-dialogue.svg)
+![圖：四層對話法架構](assets/diagrams/ch11-four-layer.svg)
 
 ### 第一層：目標
 
@@ -180,7 +180,7 @@ AI 很積極、很主動。你叫它做 A，它常常會「順手」把 B、C、
 
 我自己的做法是把產品開發分成五輪，每一輪都是一個完整的「目標 → 執行 → 驗收」循環：
 
-![圖：五輪迭代流程](assets/diagrams/ch14-five-iteration-flow.svg)
+![圖：五輪迭代流程](assets/diagrams/ch14-five-rounds.svg)
 
 ### 第一輪：能動就好
 

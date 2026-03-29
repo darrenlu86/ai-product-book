@@ -331,7 +331,7 @@ GET    /api/schools             → 取得所有學校列表
 
 ## 部署的流程
 
-![圖：CI/CD 部署流程](assets/diagrams/ch09-cicd-flow.svg)
+![圖：CI/CD 部署流程](assets/diagrams/ch09-deploy-flow.svg)
 
 這個流程叫 CI/CD（Continuous Integration / Continuous Deployment），白話講就是「推了新程式碼就自動部署」。你不需要每次都手動把檔案上傳到伺服器，推一下 Git 就搞定。建置失敗的話，系統會通知你，舊版本繼續跑，不會影響線上使用者。
 

@@ -22,8 +22,8 @@
 
   <!-- Arrow in the middle -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#7C9885"/>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#7C9885"/>
     </marker>
   </defs>
   <line x1="335" y1="220" x2="385" y2="220" stroke="#7C9885" stroke-width="2.5" marker-end="url(#arrowhead)"/>

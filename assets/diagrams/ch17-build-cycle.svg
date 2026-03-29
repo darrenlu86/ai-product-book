@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400">
   <rect width="720" height="400" fill="#FFFFFF"/>
   <defs>
-    <marker id="arrow-r17" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#7C9885"/>
+    <marker id="arrow-r17" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#7C9885"/>
     </marker>
-    <marker id="arrow-l17" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+    <marker id="arrow-l17" markerWidth="10" markerHeight="10" refX="0" refY="5" orient="auto">
       <polygon points="10 0, 0 3.5, 10 7" fill="#E8846B"/>
     </marker>
   </defs>
