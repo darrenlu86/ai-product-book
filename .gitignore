@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+book-print.html
+book-full.html
+*.pyc
+__pycache__/
+*.pdf
+book-print.html

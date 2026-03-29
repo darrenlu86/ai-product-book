@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>閱讀 — AI 時代的產品開發思維</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    color: #2d2d2d; background: #fafaf8; line-height: 1.8;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    position: fixed; top: 0; left: 0; height: 3px;
+    background: #7c9885; z-index: 1000; transition: width 0.1s;
+    width: 0%;
+  }
+
+  /* Top bar */
+  .top-bar {
+    position: fixed; top: 3px; left: 0; right: 0; height: 52px;
+    background: rgba(250,250,248,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e8e8e8; z-index: 100;
+    display: flex; align-items: center; padding: 0 20px;
+  }
+  .top-bar .menu-toggle {
+    display: none; background: none; border: none; cursor: pointer;
+    font-size: 24px; color: #555; margin-right: 12px;
+  }
+  .top-bar .book-title {
+    font-size: 14px; color: #777; flex: 1;
+  }
+  .top-bar .book-title a { text-decoration: none; color: #777; }
+  .top-bar .book-title a:hover { color: #7c9885; }
+  .top-bar .current-chapter {
+    font-size: 13px; color: #999;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed; top: 55px; left: 0; bottom: 0; width: 280px;
+    background: #f5f2ef; border-right: 1px solid #e0e0e0;
+    overflow-y: auto; padding: 20px 0; z-index: 50;
+  }
+  .sidebar .part-label {
+    font-size: 11px; font-weight: 600; color: #7c9885;
+    padding: 12px 20px 4px; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .sidebar a {
+    display: block; padding: 8px 20px; font-size: 14px;
+    color: #555; text-decoration: none; transition: all 0.15s;
+    border-left: 3px solid transparent;
+  }
+  .sidebar a:hover { background: #ece8e3; color: #333; }
+  .sidebar a.active { background: #e8e2da; color: #1a1a1a; border-left-color: #7c9885; font-weight: 500; }
+
+  /* Main content */
+  .main-content {
+    margin-left: 280px; padding: 80px 40px 120px;
+    max-width: 1080px;
+  }
+  .chapter {
+    max-width: 720px; margin: 0 auto 80px; padding-top: 20px;
+  }
+  .chapter h1 {
+    font-size: 28px; font-weight: 700; color: #1a1a1a;
+    margin-bottom: 8px; padding-bottom: 12px; border-bottom: 2px solid #ddd;
+  }
+  .chapter .part-badge {
+    font-size: 12px; color: #7c9885; font-weight: 500; margin-bottom: 24px;
+    display: block;
+  }
+  .chapter h2 { font-size: 22px; font-weight: 600; margin: 36px 0 16px; color: #333; }
+  .chapter h3 { font-size: 18px; font-weight: 600; margin: 28px 0 12px; color: #444; }
+  .chapter p { margin-bottom: 16px; font-size: 16px; }
+  .chapter ul, .chapter ol { margin: 12px 0 16px 24px; }
+  .chapter li { margin-bottom: 6px; font-size: 16px; }
+  .chapter pre {
+    background: #f5f5f5; border: 1px solid #e0e0e0; border-radius: 6px;
+    padding: 16px; margin: 16px 0; overflow-x: auto;
+    font-family: "SF Mono", "Menlo", monospace; font-size: 14px; line-height: 1.5;
+    white-space: pre-wrap; word-wrap: break-word;
+  }
+  .chapter code {
+    font-family: "SF Mono", "Menlo", monospace; font-size: 14px;
+    background: #f0f0f0; padding: 1px 5px; border-radius: 3px;
+  }
+  .chapter pre code { background: none; padding: 0; }
+  .chapter blockquote {
+    border-left: 3px solid #b8c5b2; padding: 12px 16px;
+    margin: 16px 0; background: #f8f6f3; color: #555;
+  }
+  .chapter table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  .chapter th, .chapter td { border: 1px solid #ddd; padding: 10px 14px; text-align: left; }
+  .chapter th { background: #f0ece7; font-weight: 600; }
+  .chapter strong { font-weight: 600; }
+  .chapter hr { border: none; border-top: 1px solid #e0e0e0; margin: 48px 0; }
+
+  /* Back to top */
+  .back-to-top {
+    position: fixed; bottom: 30px; right: 30px; width: 44px; height: 44px;
+    background: #7c9885; color: #fff; border: none; border-radius: 50%;
+    cursor: pointer; font-size: 20px; display: none; align-items: center;
+    justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: opacity 0.2s;
+  }
+  .back-to-top:hover { background: #6a8573; }
+  .back-to-top.visible { display: flex; }
+
+  /* Sidebar overlay for mobile */
+  .sidebar-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3); z-index: 40;
+  }
+
+  @media (max-width: 768px) {
+    .top-bar .menu-toggle { display: block; }
+    .sidebar { transform: translateX(-100%); transition: transform 0.3s; width: 260px; z-index: 50; }
+    .sidebar.open { transform: translateX(0); }
+    .sidebar-overlay.open { display: block; }
+    .main-content { margin-left: 0; padding: 70px 20px 100px; }
+    .chapter h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="top-bar">
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+  <span class="book-title"><a href="index.html">AI 時代的產品開發思維</a></span>
+  <span class="current-chapter" id="currentChapter"></span>
+</div>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar"></nav>
+
+<main class="main-content" id="mainContent"></main>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+<script src="book-content.js"></script>
+<script>
+(function() {
+  // Simple markdown to HTML converter
+  function md2html(md) {
+    let html = md;
+    // Code blocks (``` ... ```)
+    html = html.replace(/```(\w*)\n([\s\S]*?)```/g, function(_, lang, code) {
+      return '<pre><code>' + escapeHtml(code.trim()) + '</code></pre>';
+    });
+    // Headers
+    html = html.replace(/^#### (.+)$/gm, '<h4>$1</h4>');
+    html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+    html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+    // Bold
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // Italic
+    html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    // Inline code
+    html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+    // Blockquotes
+    html = html.replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>');
+    // Merge adjacent blockquotes
+    html = html.replace(/<\/blockquote>\n<blockquote>/g, '<br>');
+    // Horizontal rules
+    html = html.replace(/^---$/gm, '<hr>');
+    // Tables
+    html = html.replace(/^\|(.+)\|\n\|[-| :]+\|\n((?:\|.+\|\n?)*)/gm, function(_, header, body) {
+      let ths = header.split('|').map(h => h.trim()).filter(Boolean).map(h => '<th>' + h + '</th>').join('');
+      let rows = body.trim().split('\n').map(function(row) {
+        let tds = row.split('|').map(c => c.trim()).filter(Boolean).map(c => '<td>' + c + '</td>').join('');
+        return '<tr>' + tds + '</tr>';
+      }).join('');
+      return '<table><thead><tr>' + ths + '</tr></thead><tbody>' + rows + '</tbody></table>';
+    });
+    // Unordered lists
+    html = html.replace(/^(\s*)- (.+)$/gm, '<li>$2</li>');
+    html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+    // Ordered lists
+    html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+    // Paragraphs
+    html = html.split('\n\n').map(function(block) {
+      block = block.trim();
+      if (!block) return '';
+      if (block.startsWith('<')) return block;
+      return '<p>' + block.replace(/\n/g, '<br>') + '</p>';
+    }).join('\n');
+    return html;
+  }
+
+  function escapeHtml(text) {
+    return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  // Build sidebar
+  var sidebar = document.getElementById('sidebar');
+  var sidebarHtml = '';
+  var currentPart = '';
+
+  BOOK_CHAPTERS.forEach(function(ch) {
+    if (ch.part && ch.part !== currentPart) {
+      currentPart = ch.part;
+      sidebarHtml += '<div class="part-label">' + currentPart + '</div>';
+    }
+    sidebarHtml += '<a href="#' + ch.id + '" data-id="' + ch.id + '">' + ch.title + '</a>';
+  });
+  sidebar.innerHTML = sidebarHtml;
+
+  // Build main content
+  var main = document.getElementById('mainContent');
+  var mainHtml = '';
+  BOOK_CHAPTERS.forEach(function(ch) {
+    mainHtml += '<div class="chapter" id="' + ch.id + '">';
+    if (ch.part) mainHtml += '<span class="part-badge">' + ch.part + '</span>';
+    mainHtml += '<h1>' + ch.title + '</h1>';
+    mainHtml += md2html(ch.content);
+    mainHtml += '</div>';
+  });
+  main.innerHTML = mainHtml;
+
+  // Sidebar active state & current chapter tracking
+  var chapterEls = document.querySelectorAll('.chapter');
+  var sidebarLinks = document.querySelectorAll('.sidebar a');
+  var currentChapterEl = document.getElementById('currentChapter');
+
+  function updateActiveChapter() {
+    var scrollY = window.scrollY + 120;
+    var active = null;
+    chapterEls.forEach(function(el) {
+      if (el.offsetTop <= scrollY) active = el;
+    });
+    if (active) {
+      var id = active.id;
+      sidebarLinks.forEach(function(link) {
+        link.classList.toggle('active', link.dataset.id === id);
+      });
+      var ch = BOOK_CHAPTERS.find(function(c) { return c.id === id; });
+      if (ch) currentChapterEl.textContent = ch.title;
+      // Scroll sidebar to show active link
+      var activeLink = sidebar.querySelector('a.active');
+      if (activeLink) {
+        var linkTop = activeLink.offsetTop;
+        var sidebarH = sidebar.clientHeight;
+        if (linkTop < sidebar.scrollTop || linkTop > sidebar.scrollTop + sidebarH) {
+          sidebar.scrollTop = linkTop - sidebarH / 3;
+        }
+      }
+    }
+  }
+
+  // Progress bar
+  var progressBar = document.getElementById('progressBar');
+  function updateProgress() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = progress + '%';
+  }
+
+  // Back to top
+  var backToTop = document.getElementById('backToTop');
+  function updateBackToTop() {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  }
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Scroll handler
+  var ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        updateActiveChapter();
+        updateProgress();
+        updateBackToTop();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // Mobile menu toggle
+  var menuToggle = document.getElementById('menuToggle');
+  var sidebarOverlay = document.getElementById('sidebarOverlay');
+
+  menuToggle.addEventListener('click', function() {
+    sidebar.classList.toggle('open');
+    sidebarOverlay.classList.toggle('open');
+  });
+  sidebarOverlay.addEventListener('click', function() {
+    sidebar.classList.remove('open');
+    sidebarOverlay.classList.remove('open');
+  });
+
+  // Close sidebar on link click (mobile)
+  sidebarLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (window.innerWidth <= 768) {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('open');
+      }
+    });
+  });
+
+  // Handle hash on load
+  if (window.location.hash) {
+    setTimeout(function() {
+      var target = document.querySelector(window.location.hash);
+      if (target) target.scrollIntoView();
+    }, 100);
+  }
+
+  // Initial
+  updateActiveChapter();
+  updateProgress();
+})();
+</script>
+</body>
+</html>
