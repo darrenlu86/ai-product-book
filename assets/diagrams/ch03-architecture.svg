@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="580" viewBox="0 0 720 580">
-  <rect width="720" height="580" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
+  <rect width="720" height="620" fill="#FFFFFF"/>
   <defs>
     <marker id="arrow-d3" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
       <polygon points="0 0, 10 5, 0 10" fill="#7C9885"/>
@@ -14,7 +14,7 @@
 
   <!-- 使用者 -->
   <rect x="260" y="60" width="200" height="45" rx="22" fill="#7C9885"/>
-  <text x="360" y="88" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">👤 使用者</text>
+  <text x="360" y="88" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">使用者</text>
 
   <line x1="360" y1="105" x2="360" y2="130" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d3)"/>
 
@@ -29,19 +29,19 @@
   <text x="360" y="249" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">後端 Backend</text>
 
   <!-- 後端向下到資料庫 -->
-  <line x1="310" y1="269" x2="310" y2="310" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d3)"/>
+  <line x1="360" y1="269" x2="360" y2="310" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d3)"/>
 
   <!-- 後端向右到第三方服務 -->
-  <line x1="510" y1="244" x2="560" y2="244" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r3)"/>
+  <line x1="510" y1="244" x2="530" y2="244" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-r3)"/>
 
   <!-- 資料庫 -->
-  <rect x="160" y="317" width="300" height="50" rx="12" fill="#B8C5B2"/>
-  <text x="310" y="347" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">資料庫 Database</text>
+  <rect x="210" y="317" width="300" height="50" rx="12" fill="#B8C5B2"/>
+  <text x="360" y="347" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#2D2D2D" text-anchor="middle">資料庫 Database</text>
 
   <!-- 第三方服務 -->
-  <rect x="565" y="219" width="130" height="50" rx="12" fill="#E8E2DA"/>
-  <text x="630" y="240" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" font-weight="bold" fill="#2D2D2D" text-anchor="middle">第三方服務</text>
-  <text x="630" y="258" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="11" fill="#7C9885" text-anchor="middle">AI、金流、Email</text>
+  <rect x="540" y="219" width="150" height="50" rx="12" fill="#E8E2DA"/>
+  <text x="615" y="240" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="13" font-weight="bold" fill="#2D2D2D" text-anchor="middle">第三方服務</text>
+  <text x="615" y="258" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="11" fill="#7C9885" text-anchor="middle">AI、金流、Email</text>
 
   <!-- 部署平台 -->
   <line x1="360" y1="367" x2="360" y2="405" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d3)"/>

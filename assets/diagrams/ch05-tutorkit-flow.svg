@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="580" viewBox="0 0 720 580">
-  <rect width="720" height="580" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="610" viewBox="0 0 720 610">
+  <rect width="720" height="610" fill="#FFFFFF"/>
   <defs>
     <marker id="arrow-d5" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
       <polygon points="0 0, 10 5, 0 10" fill="#7C9885"/>
@@ -11,7 +11,7 @@
 
   <!-- Step 1: 使用者上傳 -->
   <rect x="210" y="60" width="300" height="50" rx="12" fill="#7C9885"/>
-  <text x="360" y="90" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">📄 使用者上傳考卷</text>
+  <text x="360" y="90" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">使用者上傳考卷</text>
 
   <line x1="360" y1="110" x2="360" y2="135" stroke="#7C9885" stroke-width="2" marker-end="url(#arrow-d5)"/>
 

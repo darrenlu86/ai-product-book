@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400">
-  <rect width="720" height="400" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="430" viewBox="0 0 720 430">
+  <rect width="720" height="430" fill="#FFFFFF"/>
 
   <!-- Title -->
   <text x="360" y="40" font-family="PingFang TC, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#2D2D2D" text-anchor="middle">三類決策對照</text>

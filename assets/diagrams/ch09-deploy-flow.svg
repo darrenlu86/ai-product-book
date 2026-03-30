@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="340" viewBox="0 0 720 340">
-  <rect width="720" height="340" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">
+  <rect width="720" height="360" fill="#FFFFFF"/>
   <defs>
     <marker id="arrow-r9" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
       <polygon points="0 0, 10 5, 0 10" fill="#7C9885"/>
